@@ -191,17 +191,6 @@ class TopicModeling:
         return clusters
 
 
-# def getClasses(dbname):
-#     client = pymongo.MongoClient()
-#     dbname = dbname
-#     db = client[dbname]
-#     doc_cursor = db.documents.find(no_cursor_timeout=True)
-#     doc2class = {}
-#     for doc in doc_cursor:
-#         doc2class[int(doc['_id'])-1] = doc["tags"][0]
-#     return doc2class
-
-
 def calMatrices(mydict):
     mat = []
     b = []
@@ -260,6 +249,7 @@ def stopWordsEN():
     sw_mallet = ['a', 'able', 'about', 'above', 'according', 'accordingly', 'across', 'actually', 'after', 'afterwards', 'again', 'against', 'all', 'allow', 'allows', 'almost', 'alone', 'along', 'already', 'also', 'although', 'always', 'am', 'among', 'amongst', 'an', 'and', 'another', 'any', 'anybody', 'anyhow', 'anyone', 'anything', 'anyway', 'anyways', 'anywhere', 'apart', 'appear', 'appreciate', 'appropriate', 'are', 'around', 'as', 'aside', 'ask', 'asking', 'associated', 'at', 'available', 'away', 'awfully', 'b', 'be', 'became', 'because', 'become', 'becomes', 'becoming', 'been', 'before', 'beforehand', 'behind', 'being', 'believe', 'below', 'beside', 'besides', 'best', 'better', 'between', 'beyond', 'both', 'brief', 'but', 'by', 'c', 'came', 'can', 'cannot', 'cant', 'cause', 'causes', 'certain', 'certainly', 'changes', 'clearly', 'co', 'com', 'come', 'comes', 'concerning', 'consequently', 'consider', 'considering', 'contain', 'containing', 'contains', 'corresponding', 'could', 'course', 'currently', 'd', 'definitely', 'described', 'despite', 'did', 'different', 'do', 'does', 'doing', 'done', 'down', 'downwards', 'during', 'e', 'each', 'edu', 'eg', 'eight', 'either', 'else', 'elsewhere', 'enough', 'entirely', 'especially', 'et', 'etc', 'even', 'ever', 'every', 'everybody', 'everyone', 'everything', 'everywhere', 'ex', 'exactly', 'example', 'except', 'f', 'far', 'few', 'fifth', 'first', 'five', 'followed', 'following', 'follows', 'for', 'former', 'formerly', 'forth', 'four', 'from', 'further', 'furthermore', 'g', 'get', 'gets', 'getting', 'given', 'gives', 'go', 'goes', 'going', 'gone', 'got', 'gotten', 'greetings', 'h', 'had', 'happens', 'hardly', 'has', 'have', 'having', 'he', 'hello', 'help', 'hence', 'her', 'here', 'hereafter', 'hereby', 'herein', 'hereupon', 'hers', 'herself', 'hi', 'him', 'himself', 'his', 'hither', 'hopefully', 'how', 'howbeit', 'however', 'i', 'ie', 'if', 'ignored', 'immediate', 'in', 'inasmuch', 'inc', 'indeed', 'indicate', 'indicated', 'indicates', 'inner', 'insofar', 'instead', 'into', 'inward', 'is', 'it', 'its', 'itself', 'j', 'just', 'k', 'keep', 'keeps', 'kept', 'know', 'knows', 'known', 'l', 'last', 'lately', 'later', 'latter', 'latterly', 'least', 'less', 'lest', 'let', 'like', 'liked', 'likely', 'little', 'look', 'looking', 'looks', 'ltd', 'm', 'mainly', 'many', 'may', 'maybe', 'me', 'mean', 'meanwhile', 'merely', 'might', 'more', 'moreover', 'most', 'mostly', 'much', 'must', 'my', 'myself', 'n', 'name', 'namely', 'nd', 'near', 'nearly', 'necessary', 'need', 'needs', 'neither', 'never', 'nevertheless', 'new', 'next', 'nine', 'no', 'nobody', 'non', 'none', 'noone', 'nor', 'normally', 'not', 'nothing', 'novel', 'now', 'nowhere', 'o', 'obviously', 'of', 'off', 'often', 'oh', 'ok', 'okay', 'old', 'on', 'once', 'one', 'ones', 'only', 'onto', 'or', 'other', 'others', 'otherwise', 'ought', 'our', 'ours', 'ourselves', 'out', 'outside', 'over', 'overall', 'own', 'p', 'particular', 'particularly', 'per', 'perhaps', 'placed', 'please', 'plus', 'possible', 'presumably', 'probably', 'provides', 'q', 'que', 'quite', 'qv', 'r', 'rather', 'rd', 're', 'really', 'reasonably', 'regarding', 'regardless', 'regards', 'relatively', 'respectively', 'right', 's', 'said', 'same', 'saw', 'say', 'saying', 'says', 'second', 'secondly', 'see', 'seeing', 'seem', 'seemed', 'seeming', 'seems', 'seen', 'self', 'selves', 'sensible', 'sent', 'serious', 'seriously', 'seven', 'several', 'shall', 'she', 'should', 'since', 'six', 'so', 'some', 'somebody', 'somehow', 'someone', 'something', 'sometime', 'sometimes', 'somewhat', 'somewhere', 'soon', 'sorry', 'specified', 'specify', 'specifying', 'still', 'sub', 'such', 'sup', 'sure', 't', 'take', 'taken', 'tell', 'tends', 'th', 'than', 'thank', 'thanks', 'thanx', 'that', 'thats', 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'thence', 'there', 'thereafter', 'thereby', 'therefore', 'therein', 'theres', 'thereupon', 'these', 'they', 'think', 'third', 'this', 'thorough', 'thoroughly', 'those', 'though', 'three', 'through', 'throughout', 'thru', 'thus', 'to', 'together', 'too', 'took', 'toward', 'towards', 'tried', 'tries', 'truly', 'try', 'trying', 'twice', 'two', 'u', 'un', 'under', 'unfortunately', 'unless', 'unlikely', 'until', 'unto', 'up', 'upon', 'us', 'use', 'used', 'useful', 'uses', 'using', 'usually', 'uucp', 'v', 'value', 'various', 'very', 'via', 'viz', 'vs', 'w', 'want', 'wants', 'was', 'way', 'we', 'welcome', 'well', 'went', 'were', 'what', 'whatever', 'when', 'whence', 'whenever', 'where', 'whereafter', 'whereas', 'whereby', 'wherein', 'whereupon', 'wherever', 'whether', 'which', 'while', 'whither', 'who', 'whoever', 'whole', 'whom', 'whose', 'why', 'will', 'willing', 'wish', 'with', 'within', 'without', 'wonder', 'would', 'would', 'x', 'y', 'yes', 'yet', 'you', 'your', 'yours', 'yourself', 'yourselves', 'z', 'zero']
     return list(set(sw_nltk + sw_mallet + sw_sklearn))
 
+# reads the documents from file path
 def readDocuments(mypath):
     sw_en = stopWordsEN()
     documents = []
@@ -275,8 +265,7 @@ def readDocuments(mypath):
             documents[idx] = [word.lower() for word in line.split(' ') if word.lower() not in sw_en]
     return documents
 
-# prepare the corpus
-# creates a vector with lemma text
+# prepare the corpus for Gensim
 def prepareCorpusGemsin(documents):
     id2word_mm = corpora.Dictionary(documents)
     # creates a vectorize corpus
@@ -286,6 +275,7 @@ def prepareCorpusGemsin(documents):
 
     return id2word_mm, corpus_count_mm, corpus_tfidf_mm
 
+# prepare the corpus for Sklearn
 def prepareCorpusSklearn(documents):
     texts = [' '.join(document) for document in documents]
 
@@ -308,90 +298,86 @@ def prepareCorpusSklearn(documents):
         
 if __name__ == '__main__':
     in_filepath = sys.argv[1]
-    dbname = sys.argv[2] # news or conf
-    num_topics = int(sys.argv[3])
-    num_iterations = int(sys.argv[4])
-    num_cores = int(sys.argv[5])
-
-    documents = readDocuments(in_filepath) # dir path
-    if dbname == 'conf':
-        d2c = doc2class.doc2class_conf
-    elif dbname == 'news':
-        d2c = doc2class.doc2class_news
+    num_topics = int(sys.argv[2])
+    num_iterations = int(sys.argv[3])
+    num_cores = int(sys.argv[4])
+    
+    documents = readDocuments(in_filepath)
+    d2c = doc2class.doc2class_news
     id2word_mm, corpus_count_mm, corpus_tfidf_mm = prepareCorpusGemsin(documents)
     id2word_tfidf_csr, corpus_tfidf_csr, id2word_count_csr, corpus_count_csr = prepareCorpusSklearn(documents)
     
-    #print "NMF COUNT"
-    #start = time()
-    #topic_model = TopicModeling(id2word=id2word_count_csr, corpus=corpus_count_csr, doc2class=d2c, num_cores=num_cores)
-    #nmfTopics = topic_model.topicsNMF(num_topics=num_topics, num_iterations=num_iterations)
-    #for topic in nmfTopics:
-    #    wTopics = []
-    #    for words in topic[1]:
-    #        wTopics.append(words[0])
-    #    print "Topic", topic[0], wTopics
-    #end = time()
-    #print "NMF COUNT time", (end - start)
+    print "NMF COUNT"
+    start = time()
+    topic_model = TopicModeling(id2word=id2word_count_csr, corpus=corpus_count_csr, doc2class=d2c, num_cores=num_cores)
+    nmfTopics = topic_model.topicsNMF(num_topics=num_topics, num_iterations=num_iterations)
+    for topic in nmfTopics:
+       wTopics = []
+       for words in topic[1]:
+           wTopics.append(words[0])
+       print "Topic", topic[0], wTopics
+    end = time()
+    print "NMF COUNT time", (end - start)
 
-    #print "NMF TFIDF"
-    #start = time()
-    #topic_model = TopicModeling(id2word=id2word_tfidf_csr, corpus=corpus_tfidf_csr, doc2class=d2c, num_cores=num_cores)
-    #nmfTopics = topic_model.topicsNMF(num_topics=num_topics, num_iterations=num_iterations)
-    #for topic in nmfTopics:
-    #    wTopics = []
-    #    for words in topic[1]:
-    #        wTopics.append(words[0])
-    #    print "Topic", topic[0], wTopics
-    #end = time()
-    #print "NMF TFIDF time", (end - start)
+    print "NMF TFIDF"
+    start = time()
+    topic_model = TopicModeling(id2word=id2word_tfidf_csr, corpus=corpus_tfidf_csr, doc2class=d2c, num_cores=num_cores)
+    nmfTopics = topic_model.topicsNMF(num_topics=num_topics, num_iterations=num_iterations)
+    for topic in nmfTopics:
+       wTopics = []
+       for words in topic[1]:
+           wTopics.append(words[0])
+       print "Topic", topic[0], wTopics
+    end = time()
+    print "NMF TFIDF time", (end - start)
 
-    #print "KMEANS COUNT"
-    #start = time()
-    #topic_model = TopicModeling(id2word=id2word_count_csr, corpus=corpus_count_csr, doc2class=d2c, num_cores=num_cores)
-    #kMeansTopics = topic_model.clustersKMeans(num_clusters=num_topics, num_iterations=num_iterations)
-    #for topic in kMeansTopics:
-    #    wTopics = []
-    #    for words in topic[1]:
-    #        wTopics.append(words[0])
-    #    print "Topic", topic[0], wTopics
-    #end = time()
-    #print "KMEANS COUNT time", (end - start)
+    print "KMEANS COUNT"
+    start = time()
+    topic_model = TopicModeling(id2word=id2word_count_csr, corpus=corpus_count_csr, doc2class=d2c, num_cores=num_cores)
+    kMeansTopics = topic_model.clustersKMeans(num_clusters=num_topics, num_iterations=num_iterations)
+    for topic in kMeansTopics:
+       wTopics = []
+       for words in topic[1]:
+           wTopics.append(words[0])
+       print "Topic", topic[0], wTopics
+    end = time()
+    print "KMEANS COUNT time", (end - start)
    
-    #print "KMEANS TFIDF"
-    #start = time()
-    #topic_model = TopicModeling(id2word=id2word_tfidf_csr, corpus=corpus_tfidf_csr, doc2class=d2c, num_cores=num_cores)
-    #kMeansTopics = topic_model.clustersKMeans(num_clusters=num_topics, num_iterations=num_iterations)
-    #for topic in kMeansTopics:
-    #    wTopics = []
-    #    for words in topic[1]:
-    #        wTopics.append(words[0])
-    #    print "Topic", topic[0], wTopics
-    #end = time()
-    #print "KMEANS TFIDF time", (end - start)
+    print "KMEANS TFIDF"
+    start = time()
+    topic_model = TopicModeling(id2word=id2word_tfidf_csr, corpus=corpus_tfidf_csr, doc2class=d2c, num_cores=num_cores)
+    kMeansTopics = topic_model.clustersKMeans(num_clusters=num_topics, num_iterations=num_iterations)
+    for topic in kMeansTopics:
+       wTopics = []
+       for words in topic[1]:
+           wTopics.append(words[0])
+       print "Topic", topic[0], wTopics
+    end = time()
+    print "KMEANS TFIDF time", (end - start)
     
-    #print "LDA GENSIM COUNT"
-    #topic_model = TopicModeling(id2word=id2word_mm, corpus=corpus_count_mm, doc2class=d2c, num_cores=num_cores)
-    #start = time()
-    #ldaTopics = topic_model.topicsLDA_gensim(num_topics=num_topics, num_iterations=num_iterations, chunksize=len(documents))
-    #for topic in ldaTopics:
-    #    wTopics = []
-    #    for words in topic[1]:
-    #        wTopics.append(words[0])
-    #    print "Topic", topic[0], wTopics
-    #end = time()
-    #print "LDA GENSIM COUNT time", (end - start)
+    print "LDA GENSIM COUNT"
+    topic_model = TopicModeling(id2word=id2word_mm, corpus=corpus_count_mm, doc2class=d2c, num_cores=num_cores)
+    start = time()
+    ldaTopics = topic_model.topicsLDA_gensim(num_topics=num_topics, num_iterations=num_iterations, chunksize=len(documents))
+    for topic in ldaTopics:
+       wTopics = []
+       for words in topic[1]:
+           wTopics.append(words[0])
+       print "Topic", topic[0], wTopics
+    end = time()
+    print "LDA GENSIM COUNT time", (end - start)
    
-    #print "LDA GENSIM TFIDF"
-    #start = time()
-    #topic_model = TopicModeling(id2word=id2word_mm, corpus=corpus_tfidf_mm, doc2class=d2c, num_cores=num_cores)
-    #ldaTopics = topic_model.topicsLDA_gensim(num_topics=num_topics, num_iterations=num_iterations, chunksize=len(documents))
-    #for topic in ldaTopics:
-    #    wTopics = []
-    #    for words in topic[1]:
-    #        wTopics.append(words[0])
-    #    print "Topic", topic[0], wTopics
-    #end = time()
-    #print "LDA GENSIM TFIDF time", (end - start)
+    print "LDA GENSIM TFIDF"
+    start = time()
+    topic_model = TopicModeling(id2word=id2word_mm, corpus=corpus_tfidf_mm, doc2class=d2c, num_cores=num_cores)
+    ldaTopics = topic_model.topicsLDA_gensim(num_topics=num_topics, num_iterations=num_iterations, chunksize=len(documents))
+    for topic in ldaTopics:
+       wTopics = []
+       for words in topic[1]:
+           wTopics.append(words[0])
+       print "Topic", topic[0], wTopics
+    end = time()
+    print "LDA GENSIM TFIDF time", (end - start)
 
     print "LDA SKLEARN COUNT"
     start = time()
