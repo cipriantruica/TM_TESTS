@@ -1,0 +1,1 @@
+From: PKR@SLACVM.SLAC.STANFORD.EDU (Patrick Krejcik) Subject: File Server Mac  I saw once an article about a new line of Macs configured to\t work more optimally as file servers. \t Anyone know any more details? 

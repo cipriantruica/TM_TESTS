@@ -1,0 +1,1 @@
+From: rws2v@uvacs.cs.Virginia.EDU (Richard Stoakley) Subject: Need a good concave -> convex polygon algorithm  \tWe need a good concave ->convex polygon conversion routine. i have tried a couple without much luck.  Please E-mail responses and I will post a summary of any replies.  Thank you.  Richard Stoakley rws2v@uvacs.cs.Virginia.EDU 

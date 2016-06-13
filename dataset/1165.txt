@@ -1,0 +1,1 @@
+From:  danny hawrysio   Subject: radiosity   -> I am looking for source-code for the radiosity-method.   I do not know what kind of machine you want it for, but the program Radiance comes with \'C\' source code - I do not have ftp access so I could not tell you where to get it via that way. -- Canada Remote Systems - Toronto, Ontario 416-629-7000/629-7044 

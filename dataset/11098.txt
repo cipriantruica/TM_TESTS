@@ -1,0 +1,1 @@
+From: smhanaes@gpu.utcc.utoronto.ca (D. Wigglesworth) Subject: freely distributable public key cryptography c++ code:  where?   Do you know of any freely distributable c++ (or c) code for public key cryptography (such as RSA)?    i have tried various archie searches to no avail.    \tThanks, \tDan 

@@ -1,0 +1,1 @@
+From: michel@crnsu1.IN2p3.FR (6893) Subject: creating a GIF file.   \tWe are looking for a X client which can convert a xwd or a bitmap file into a gif file for use on a Macintosh.  \tThanks  \t\tmichel@crnsu1.in2p3.fr \t\tLaurent MICHEL \t\tCRN - GTI \t\tBP 20 \t\t67037 STRASBOURG cedex (France) \t\tPhone (33) 88 28 62 76 

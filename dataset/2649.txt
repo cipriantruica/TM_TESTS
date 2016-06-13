@@ -1,0 +1,1 @@
+Subject: Re: Need longer filenames From: maystonr@grace.cri.nz (Richard Mayston)    In article  hfeldman@infoserv.com (Howard MITCHell Feldman) writes: >In , lhighley@gozer.idbsu.edu (Larry Paul Highley)  wrote: >>  >>  >> Is there a utility out there that will let me use filenames longer than >> the standard 8.3 format.   > Yep, it is called OS2! 

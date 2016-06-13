@@ -1,0 +1,1 @@
+From: Rob Earhart  Subject: Re: Q: How to avoid XOpenDisplay hang?    do not know how to avoid the XOpenDisplay hang... but perhaps you could use something else (such as zephyr, perhaps)?    )Rob 

@@ -1,0 +1,1 @@
+From: Ivanov Sergey  Subject: Re: Re: VGA 640x400 graphics mode  > My 8514/a VESA TSR supports this   Can You report CRT and other register state in this mode ?  Thank is.          Serge Ivanov (serge@argus.msk.su)  

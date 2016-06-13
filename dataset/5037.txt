@@ -1,0 +1,1 @@
+From: brians@atlastele.com (Brian Sheets) Subject: Looking for a filemanager under X11R5  Does anyone have a file manager that runs under UNIX/X11R5??   brians --  Brian Sheets\t\t    _   /|  \t TRUCK?! What truck?  Support Engineer  \t     `o_O\'    \t  Atlas Telecom Inc. \t      ( ) \t   -Raiders of the Lost Ark brians@atlastele.com           U 

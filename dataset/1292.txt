@@ -1,0 +1,1 @@
+From: richter@fossi.hab-weimar.de (Axel Richter) Subject: True Color Display in POV   Hallo POV-Renderers ! i have got a BocaX3 Card. Now I try to get POV displaying True Colors while rendering. i have tried most of the options and UNIVESA-Driver but what happens is not correct. Can anybody help me ? 

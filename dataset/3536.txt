@@ -1,0 +1,1 @@
+From: brand@addvax.llnl.gov (Hal R. Brand, LLnL, 510-422-6312) Subject: Comments on TEXEL 5024 CD-ROM drive sought  Anyone have any recommendations/warnings about the Texel 5024 CD-ROM drive or about any of its competitors? i am looking for a CD-ROM drive for connection to a PAS-16 SCSI port.  \t\t\t\t\tHal R. Brand \t\t\t\t\tLLNL \t\t\t\t\tbrand@addvax.llnl.gov 

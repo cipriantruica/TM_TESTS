@@ -1,0 +1,1 @@
+From:  Subject: tn3270 support for xterm?  Is there a tn3270 program which support xterm? I do not like x3270 at all. You cannot copy with other windows. Thanks. 

@@ -1,0 +1,1 @@
+From: orourke@sophia.smith.edu (Joseph O\'Rourke) Subject: Re: Fast polygon routine needed  In article  osprey@ux4.cso.uiuc.edu (Lucas Adamski) writes: >This may be a fairly routine request on here, but i am looking for a fast >polygon routine to be used in a 3D game.  \tA fast polygon routine to do WHAT? 

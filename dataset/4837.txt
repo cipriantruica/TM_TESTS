@@ -1,0 +1,1 @@
+From:  Derrick J. Brashear   Subject: virtual mouse in open look under X11?  Is the virtual mouse simulation in ol{v}wm 3.x available under X11R5? i have been told i am setting the right resource, yet it continues not to work. i am running olvwm3.3 (or olwm 3) on a Sun 3, X11R5 pl 22.  -D  

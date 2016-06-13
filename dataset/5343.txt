@@ -1,0 +1,1 @@
+From: apara@ctp.com (Atul Parasnis) Subject: DCE RPC, Threads, X/Motif Clients   \tHas anyone used DCE threads with an X Client? \tIs it possible to have one thread listening for incoming RPCs \twhile another processes X Events? How do you set something \tlike this up? \t\t\t\t\t_ Atul \t\t\t\t\t(apara@ctp.com)  \t\t\t\t 

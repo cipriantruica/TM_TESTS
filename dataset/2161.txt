@@ -1,0 +1,1 @@
+From: chrisa@hpwarr.hp.com ( Chris Almy) Subject: Re: WinFax files in ASCII format?    \tWinFax Pro provides you with OCR. It is the OCR from OmniPage. \tAlthough it is not as customizable it does the job and is auto \tmatic (if you want) and much cheaper than the same package \t(Omni Page Professional = $700) sold separatly.  \tLast time I check WinFax Pro was only $100 ??    

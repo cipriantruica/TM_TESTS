@@ -1,0 +1,1 @@
+From: x90sanson@gw.wmich.edu Subject: what is the diff.between mouse.sys/com??  what is the difference between loading mouse.com in autoexec.bat and doing device=mouse.sys in config.sys??  which one is better?  Thanks a lot  enrique 

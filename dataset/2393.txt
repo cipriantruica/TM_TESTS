@@ -1,0 +1,1 @@
+From: alee@mnemosyne.cs.du.edu (Alec Lee) Subject: Windows Speaker Sound Driver  Is there an ftp site where I can get the MS speaker sound driver?  there is a  sound.exe  file that claims to be the driver but i am suspicious since it is not a .drv file.    Thanks  Alec Lee 

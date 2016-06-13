@@ -1,0 +1,1 @@
+From: smb@research.att.com (Steven Bellovin) Subject: Re: Clipper and conference calls  In article , feeley@cattell.psych.upenn.edu (Wm. Michael Feeley) writes: > Just curious, how would the Clipper Chip system handle > conference calls?  it is not Clipper, it is any encryption system.  i have seen a number of designs; they generally involve a multi-line cleartext bridge. 

@@ -1,0 +1,1 @@
+From: zyeh@caspian.usc.edu (zhenghao yeh) Subject: Delaunay Triangulation   Does anybody know what Delaunay Triangulation is? Is there any reference to it?  Is it useful for creating 3-D objects? If yes, what is the advantage?  Thanks in advance.  Yeh USC 

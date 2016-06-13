@@ -1,0 +1,1 @@
+From: mathew  Subject: Re:  I think you mean circular, not recursive, but that is semantics. > Recursiveness has no problems, it is just horribly inefficient (just ask > any assembly programmer.)  Tail-recursive functions in Scheme are at least as efficient as iterative loops.  Anyone who does not program in assembler will have heard of optimizing compilers.   mathew 

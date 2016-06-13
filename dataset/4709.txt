@@ -1,0 +1,1 @@
+From: ewang@ucsee.Berkeley.EDU (Edward Wang) Subject: Widget source code needed  i am considering writing my own widgets, but I like to have some sample widget source code to look over first.  Where could I find something like this?  Are there any archives accessible by anonymous ftp that contain  such information?  \t\t\t\t\t\t\tThanks, \t\t\t\t\t\t\tEdward    

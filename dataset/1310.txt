@@ -1,0 +1,1 @@
+From: patrick@Erc.MsState.Edu (Patrick Bridges) Subject: Re: Diamond Stelth 24- any good?  The real problem w/ the Stealth from what i have heard is that Diamond will not tell anyone how to program their proprietary clock stuff, so X under Linux and 386BSD will not run....   \t\t\t\t\tPatrick Bridges \t\t\t\t\tpatrick@erc.msstate.edu 
