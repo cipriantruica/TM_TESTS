@@ -6,7 +6,8 @@ NUM_CORES=1
 FILE_NAME_CONF_CLEAN="dataset/"
 OUTPUT_FILE="output/"
 # change the compiler
-PyCC="python"
+#PyCC="python"
+PyCC="/usr/share/anaconda/bin/python"
 
 
 
